@@ -19,12 +19,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 # ---------------------------
 # ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
 # ---------------------------
-WINDOW_WIDTH = 300
-WINDOW_HEIGHT = 300
+WINDOW_WIDTH = 500   # Размеры окна витуберки (размер спрайта уменьшается пропорционально)
+WINDOW_HEIGHT = 500
 window_screen = None
 hwnd = None
 CHUNK_SIZE = 1024
-MAX_SHAKE_PX = 0.5
+MAX_SHAKE_PX = 0.5  # МОДИФИКАТОР ТРЯСКИ
 
 # Потокобезопасность
 layers_lock = threading.Lock()
@@ -99,7 +99,7 @@ class Layer:
         base_y = window_height - scaled_height - margin
        
         if shake_level > 0:
-            max_offset = int(MAX_SHAKE_PX * shake_level * (len(self.frames)-1))
+            max_offset = int(MAX_SHAKE_PX * shake_level * len(self.frames)) # Тут можно менять разброс тряски
             # if not self.cur_frame_id: max_offset = 0
             offset_x = random.randint(-max_offset, max_offset)
             offset_y = random.randint(-max_offset, max_offset)
@@ -115,7 +115,7 @@ class Layer:
             return
         mouth_index = round(level * (len(self.frames) - 1))
         # print(level, mouth_index, len(self.frames))
-        if abs(mouth_index - self.cur_frame_id) > 1:
+        if abs(mouth_index - self.cur_frame_id) > 1:  # Штука чтобы спрайт не перескакивал серез спрайты (с 0.png на 4.png например)
             self.cur_frame_id += (1 if mouth_index > self.cur_frame_id else -1)
         else:
             self.cur_frame_id = mouth_index
@@ -237,8 +237,6 @@ class LayerManagerGUI:
             command_queue.put(("set_active", idx))
            
 
-   
-
     def on_close(self):
         command_queue.put(("quit", None))
         self.root.destroy()
@@ -315,9 +313,10 @@ stream = p.open(
 
 # while time.time() - start < 2:
 #     noise_samples.append(get_loudness(stream))
-
+# BACKGROUND_NOISE = np.mean(noise_samples)
 BACKGROUND_NOISE = 20
 
+# DYNAMIC_MAX = BACKGROUND_NOISE * 10   #- ДЛЯ ДИНАМИЧЕСКОГО ИЗМЕНЕНИЯ МАКС.ГРОМКОСТИ
 
 # print("Калибровка... кричи")
 
@@ -326,7 +325,10 @@ BACKGROUND_NOISE = 20
 
 # while time.time() - start < 2:
 #     noise_samples.append(get_loudness(stream))
-CONSTANT_MAX = 900
+# CONSTANT_MAX = np.mean(noise_samples)
+CONSTANT_MAX = 800
+
+
 
 DYNAMIC_MAX = CONSTANT_MAX
 SMOOTHING = 0.8
@@ -356,13 +358,16 @@ while not close:
 
     # Обработка событий Pygame
     for event in py.event.get():
+        # if py.mouse.get_pressed()[0]:            # Раскоментируй это чтобы витуберка обновлялась при перемещении
+        #     py.event.get()
+        #     move_window()
         if event.type == py.QUIT:
             close = True
-        elif event.type == py.MOUSEBUTTONDOWN:
-            while py.mouse.get_pressed()[0]:
-                py.event.get()
-                move_window()
-        elif event.type == py.KEYDOWN:
+        elif event.type == py.MOUSEBUTTONDOWN:     #  Закоментируй это чтобы витуберка обновлялась при перемещении
+            while py.mouse.get_pressed()[0]:       #
+                py.event.get()                     #
+                move_window()                      #
+        elif event.type == py.KEYDOWN: 
             if event.key == py.K_EQUALS or event.key == py.K_PLUS:
                 new_width = int(WINDOW_WIDTH * 1.1)
                 new_height = int(WINDOW_HEIGHT * 1.1)
@@ -378,17 +383,19 @@ while not close:
     # Аудио-анализ
     loudness = get_loudness(stream) - BACKGROUND_NOISE
 
-    if loudness >= DYNAMIC_MAX: DYNAMIC_MAX = loudness
-    else: DYNAMIC_MAX = max(CONSTANT_MAX, DYNAMIC_MAX * 0.995)
-    
-    level = loudness / DYNAMIC_MAX
+    # if loudness >= DYNAMIC_MAX: DYNAMIC_MAX = loudness
+    # else: DYNAMIC_MAX = max(CONSTANT_MAX, DYNAMIC_MAX * 0.995)
+    # level = loudness / DYNAMIC_MAX  # ДЛЯ ДИНАМИЧЕСКОГО ИЗМЕНЕНИЯ МАКС.ГРОМКОСТИ
+
+    if loudness > CONSTANT_MAX: loudness = CONSTANT_MAX
+    level = loudness / CONSTANT_MAX
+
     if level < 0.05: level = 0
 
     smoothed_level = abs(SMOOTHING * smoothed_level + (1 - SMOOTHING) * level)
 
     if smoothed_level < 0.05: smoothed_level = 0
-    print(f"Smoothed Level {smoothed_level}")
-    print(f"Dynamic max {DYNAMIC_MAX}")
+
     window_screen.fill((255, 0, 128))
 
     with layers_lock:
