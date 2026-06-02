@@ -201,3 +201,13 @@ client_session: <aiohttp.client.ClientSession object at 0x00000157309A7750>
 2026-06-02 21:22:35 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track неважно
 2026-06-02 21:25:51 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Нежная Любовь
 2026-06-02 22:28:46 [INFO] __main__ (main.py:80): Application finished, closing connections
+2026-06-03 02:29:12 [INFO] __main__ (main.py:25): Initializing Application
+2026-06-03 02:29:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-06-03 02:29:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-06-03 02:29:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-06-03 02:29:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command песня
+2026-06-03 02:29:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command музыка
+2026-06-03 02:29:19 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-06-03 02:29:19 [INFO] __main__ (main.py:75): App is ready to work
+2026-06-03 02:29:45 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Outro
+2026-06-03 02:29:51 [INFO] __main__ (main.py:80): Application finished, closing connections

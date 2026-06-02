@@ -9,4 +9,4 @@ class CommandRegistry:
         return self._commands.get(name)
 
     def get_all_commands(self):
-        return dict(self._commands)   # копия, чтобы снаружи не меняли
+        return dict(self._commands)
