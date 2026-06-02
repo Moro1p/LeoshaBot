@@ -18,7 +18,6 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 # ---------------------------
 # ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
-# ---------------------------
 WINDOW_WIDTH = 500   # Размеры окна витуберки (размер спрайта уменьшается пропорционально)
 WINDOW_HEIGHT = 500
 window_screen = None
@@ -137,7 +136,7 @@ def process_gui_commands():
                     with layers_lock:
                         active_layer_index = len(layers) - 1
                 except Exception as e:
-                    print(f"Ошибка добавления слоя: {e}")
+                    print(f"Ошибка добавления витуберки: {e}")
 
             elif cmd == "remove_layer":
                 idx = data
@@ -174,7 +173,7 @@ def process_gui_commands():
 class LayerManagerGUI:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("Управление слоями")
+        self.root.title("Управление витуберками")
         self.root.geometry("400x350")
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
 
@@ -189,8 +188,8 @@ class LayerManagerGUI:
         # Кнопка Добавить
         btn_frame = tk.Frame(main_frame)
         btn_frame.pack(fill=tk.X, pady=5)
-        tk.Button(btn_frame, text="Добавить слой", command=self.add_layer).pack(side=tk.LEFT, padx=2)
-        tk.Button(btn_frame, text="Удалить слой", command=self.remove_layer).pack(side=tk.LEFT, padx=2)
+        tk.Button(btn_frame, text="Добавить витуберку", command=self.add_layer).pack(side=tk.LEFT, padx=2)
+        tk.Button(btn_frame, text="Удалить витуберку", command=self.remove_layer).pack(side=tk.LEFT, padx=2)
 
         self.refresh_listbox()
         
@@ -348,7 +347,7 @@ gui_thread = threading.Thread(target=gui_thread_func, daemon=True)
 gui_thread.start()
 
 # ---------------------------
-# ОСНОВНОЙ ЦИКЛ
+# MAIN LOOP
 # ---------------------------
 close = False
 while not close:

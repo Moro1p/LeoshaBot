@@ -1,0 +1,203 @@
+2026-05-24 19:57:44 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-24 19:57:48 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-24 19:57:50 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-24 19:57:50 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-24 20:46:50 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-24 20:54:24 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-24 20:54:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-24 20:54:29 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-24 20:54:30 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-24 20:54:47 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command ""
+2026-05-24 20:54:52 [ERROR] twitchAPI.chat (helper.py:285): Error while running callback
+Traceback (most recent call last):
+  File "f:\Coding\Projects\LeoshaBot\main.py", line 65, in np_handler
+    await execute(cmd, ym_service)
+  File "f:\Coding\Projects\LeoshaBot\commands\np.py", line 2, in execute
+    info = await ym_service.get_track()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "f:\Coding\Projects\LeoshaBot\core\yandex_music_service.py", line 185, in get_track
+    short_link = get_short_url(link)
+TypeError: get_short_url() missing 1 required positional argument: 'url'
+2026-05-24 20:55:09 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-24 22:54:42 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-24 22:54:46 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-24 22:54:47 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-24 22:54:48 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-24 22:55:06 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-24 22:56:07 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-24 22:56:11 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-24 22:56:14 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-24 22:56:14 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-24 22:59:05 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-24 23:02:05 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-24 23:02:08 [INFO] __main__ (main.py:54): Yandex token not available, starting authorization
+2026-05-24 23:03:05 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-24 23:03:07 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-24 23:03:08 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-24 23:29:34 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-25 17:22:25 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 17:22:30 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-25 17:22:32 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-25 17:22:32 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-25 17:22:41 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-25 17:22:57 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 17:23:01 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-25 17:23:02 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-25 17:23:03 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-25 17:40:09 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-25 17:40:44 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 17:40:48 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-25 17:40:50 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-25 17:40:50 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-25 17:40:52 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-25 17:41:10 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 17:41:14 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-25 17:41:15 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-25 17:41:16 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-25 17:41:24 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:21 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:26 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:32 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:34 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:38 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:41 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:43 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:47 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:42:50 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 17:43:03 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 18:18:42 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 18:20:18 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Letter in a Suitcase
+2026-05-25 18:37:25 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-25 18:48:24 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 18:48:26 [ERROR] asyncio (base_events.py:1865): Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000157309A7750>
+2026-05-25 18:48:33 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 18:48:38 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-25 18:48:40 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-25 18:48:40 [INFO] __main__ (main.py:71): App is ready to work
+2026-05-25 18:50:15 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "up"
+2026-05-25 18:50:27 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "un"
+2026-05-25 18:50:27 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Цветок
+2026-05-25 18:54:42 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track В НЕБЕ ОБЛАКА
+2026-05-25 18:59:39 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Without Me
+2026-05-25 19:05:27 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track A Little Samba
+2026-05-25 19:07:50 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track A Little Samba
+2026-05-25 19:30:07 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Я ЭТО Я
+2026-05-25 19:38:01 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Puzzle Pieces
+2026-05-25 20:11:54 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "nl"
+2026-05-25 20:12:06 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Разбуди меня
+2026-05-25 20:15:37 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Memories  [Extended]
+2026-05-25 20:27:00 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "song"
+2026-05-25 20:27:20 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track На Юг
+2026-05-25 20:29:26 [INFO] __main__ (main.py:76): Application finished, closing connections
+2026-05-25 20:29:29 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 20:29:33 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-25 20:29:33 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-05-25 20:29:33 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-05-25 20:29:35 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-25 20:29:35 [INFO] __main__ (main.py:73): App is ready to work
+2026-05-25 20:29:41 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track На Юг
+2026-05-25 20:29:46 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track На Юг
+2026-05-25 20:30:02 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track На Юг
+2026-05-25 20:31:15 [INFO] __main__ (main.py:78): Application finished, closing connections
+2026-05-25 20:31:19 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-25 20:31:23 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-25 20:31:23 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-05-25 20:31:23 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-05-25 20:31:23 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command песня
+2026-05-25 20:31:23 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command музыка
+2026-05-25 20:31:24 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-25 20:31:24 [INFO] __main__ (main.py:75): App is ready to work
+2026-05-25 20:31:29 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Дай знак
+2026-05-25 20:31:33 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Дай знак
+2026-05-25 20:31:37 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Дай знак
+2026-05-25 20:56:04 [INFO] twitchAPI.chat (__init__.py:977): got reconnect request...
+2026-05-25 20:56:06 [INFO] twitchAPI.chat (__init__.py:979): reconnect completed
+2026-05-25 20:56:16 [WARNING] twitchAPI.chat (__init__.py:1099): failed to join the following channel of the initial following list: leoshaya
+2026-05-25 20:56:16 [INFO] twitchAPI.chat (__init__.py:1101): done joining initial channels
+2026-05-25 21:03:46 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Careless Whisper
+2026-05-25 21:16:17 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Недоразумение
+2026-05-25 21:19:22 [INFO] __main__ (main.py:80): Application finished, closing connections
+2026-05-30 17:44:02 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-30 17:44:10 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-30 17:44:10 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-05-30 17:44:10 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-05-30 17:44:10 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command песня
+2026-05-30 17:44:10 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command музыка
+2026-05-30 17:44:12 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-30 17:44:12 [INFO] __main__ (main.py:75): App is ready to work
+2026-05-30 17:44:39 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Safe And Sound
+2026-05-30 17:49:00 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Stressed Out
+2026-05-30 17:54:26 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Love Me
+2026-05-30 19:05:57 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Жить
+2026-05-30 19:22:52 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track YKWIM?
+2026-05-30 19:38:27 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "settitle"
+2026-05-30 19:42:30 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "settitle"
+2026-05-30 19:47:42 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track I Love You So
+2026-05-30 20:07:07 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Dark Red
+2026-05-30 20:07:31 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "тг"
+2026-05-30 20:14:43 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Moves Like Jagger
+2026-05-30 20:34:47 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Money
+2026-05-30 20:44:55 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "сервер"
+2026-05-30 20:48:53 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "watchtime"
+2026-05-30 20:49:13 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "followage"
+2026-05-30 20:50:23 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Sailor Song
+2026-05-30 20:51:56 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Sailor Song
+2026-05-30 20:52:00 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Sailor Song
+2026-05-30 20:52:04 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Sailor Song
+2026-05-30 20:52:08 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Sailor Song
+2026-05-30 20:52:11 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Sailor Song
+2026-05-30 21:01:39 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "тг"
+2026-05-30 21:50:12 [INFO] __main__ (main.py:25): Initializing Application
+2026-05-30 21:50:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-05-30 21:50:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-05-30 21:50:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-05-30 21:50:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command песня
+2026-05-30 21:50:17 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command музыка
+2026-05-30 21:50:19 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-05-30 21:50:19 [INFO] __main__ (main.py:75): App is ready to work
+2026-05-30 21:50:38 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Strange Home
+2026-05-30 22:36:28 [INFO] __main__ (main.py:80): Application finished, closing connections
+2026-06-02 18:26:09 [INFO] __main__ (main.py:25): Initializing Application
+2026-06-02 18:26:19 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-06-02 18:26:19 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-06-02 18:26:19 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-06-02 18:26:19 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command песня
+2026-06-02 18:26:20 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command музыка
+2026-06-02 18:26:21 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-06-02 18:26:21 [INFO] __main__ (main.py:75): App is ready to work
+2026-06-02 18:26:28 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Forever Young
+2026-06-02 18:27:58 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Sign of the Times
+2026-06-02 19:33:16 [INFO] twitchAPI.chat (__init__.py:1136): no handler registered for command "тз"
+2026-06-02 19:33:21 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Оставь всё как есть
+2026-06-02 19:36:09 [INFO] __main__ (main.py:80): Application finished, closing connections
+2026-06-02 19:36:22 [INFO] __main__ (main.py:25): Initializing Application
+2026-06-02 19:36:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-06-02 19:36:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-06-02 19:36:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-06-02 19:36:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command песня
+2026-06-02 19:36:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command музыка
+2026-06-02 19:36:29 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-06-02 19:36:29 [INFO] __main__ (main.py:75): App is ready to work
+2026-06-02 19:36:40 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Оставь всё как есть
+2026-06-02 19:37:30 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Оставь всё как есть
+2026-06-02 19:37:58 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Оставь всё как есть
+2026-06-02 19:38:12 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Оставь всё как есть
+2026-06-02 19:38:41 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Оставь всё как есть
+2026-06-02 19:38:58 [INFO] __main__ (main.py:80): Application finished, closing connections
+2026-06-02 19:48:24 [INFO] __main__ (main.py:25): Initializing Application
+2026-06-02 19:48:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command np
+2026-06-02 19:48:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command song
+2026-06-02 19:48:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command music
+2026-06-02 19:48:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command песня
+2026-06-02 19:48:28 [INFO] TwitchBotService (twitch_bot_service.py:27): Registered command музыка
+2026-06-02 19:48:29 [INFO] TwitchBotService (twitch_bot_service.py:30): Connecting to chat...
+2026-06-02 19:48:29 [INFO] __main__ (main.py:75): App is ready to work
+2026-06-02 19:48:33 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Туристами
+2026-06-02 19:53:36 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Huit octobre 1971
+2026-06-02 19:58:55 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Golden Hour (Jvke Song Bootleg)
+2026-06-02 20:13:42 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Money Trees
+2026-06-02 21:04:02 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Solitude Velocity
+2026-06-02 21:22:35 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track неважно
+2026-06-02 21:25:51 [INFO] YandexMusicService (yandex_music_service.py:186): Successful fetch track Нежная Любовь
+2026-06-02 22:28:46 [INFO] __main__ (main.py:80): Application finished, closing connections

@@ -1,0 +1,12 @@
+class CommandRegistry:
+    def __init__(self):
+        self._commands = {}
+
+    def register(self, name, handler):
+        self._commands[name] = handler
+
+    def get_handler(self, name):
+        return self._commands.get(name)
+
+    def get_all_commands(self):
+        return dict(self._commands)   # копия, чтобы снаружи не меняли
